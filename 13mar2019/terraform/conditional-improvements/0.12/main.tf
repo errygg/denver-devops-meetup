@@ -7,7 +7,7 @@ provider "random" {}
 resource "random_pet" "pet" {
 
   #-----------------------------------------------------------------------------
-  # Yay, readability!
+  # Yay, readability and first-class expressions!
   length = (var.whose == "yours" ? var.yours_length : var.mine_length)
   #-----------------------------------------------------------------------------
 
